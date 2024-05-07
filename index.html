@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Рекламный сайт</title>
+    <style>
+        .container {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20% 1fr 5%;
+            grid-template-areas:
+                "header header"
+                "content sidebar"
+                "footer footer";
+            font-size: 18px;
+        }
+
+        .header {
+            grid-area: header;
+            display: inline-flex;
+            justify-content: space-around;
+        }
+
+        .logo {
+            width: 106px;
+            height: 54px;
+            margin-top: 40px;
+        }
+
+        .header-nav {
+            width: 772px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .menu {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button {
+            width: 220px;
+            height: 70px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .content {
+            grid-area: content;
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+
+        .start {
+            width: 438px;
+            height: 118px;
+            color: white;
+            background-color: black;
+            font-weight: 900;
+            border-radius: 7px;
+            margin-top: 50px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        a:link {
+            color: rgb(8, 8, 8);
+        }
+
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./logo.png" alt="logo" class="logo">
+            <nav class="header-nav">
+                <a href="#" class="menu">Home</a>
+                <a href="#" class="menu">Skills</a>
+                <a href="#" class="menu">Aboute us</a>
+                <a href="#" class="menu">Pricing</a>
+                <a href="#" class="menu">Contacts</a>
+            </nav>
+            <button class="button">Let's Talk</button>
+        </header>
+        <section class="content">
+            <h1>Learn Any Foreign Language</h1>
+            <p>With our teachers who write a program for each srudent, you will be able to make your
+                first sketch after the first lesson.</p>
+            <button class="start">Get started</button>
+        </section>
+        <aside class="sidebar">
+            <img src="./girl.png" alt="girl">
+        </aside>
+
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
